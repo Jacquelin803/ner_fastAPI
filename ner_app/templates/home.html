@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>命名实体识别首页</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+   </head>
+
+<body>
+    <div class="container">
+        <h2></h2>
+        <h1 style="text-align: center">命名实体识别首页</h1>
+        <h1> </h1>
+        <div class="middle-right" >
+            <div class="col-md-8 col-md-offset-2">
+                <h3 style="text-align: left">请输入要进行命名实体识别的句子</h3>
+                <form action="/ner_app" method="POST">
+                    <textarea id="data"name="data"class="form-control" rows="3">{{ data }}</textarea>
+                    <input class="btn btn-primary" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <div class="middle-right">
+            <div class="col-md-8 col-md-offset-2">
+                <h1> </h1>
+            <h3 style="text-align: left">识别结果</h3>
+                <span  style="color:blue;font-size:20px">{{ result }}</span>
+            </div>
+        </div>
+    </div>
+   </body>
+</html>
