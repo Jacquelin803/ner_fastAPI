@@ -64,5 +64,5 @@ INFO:     Started reloader process [14] using statreload
 + web url
 http://192.168.126.150:8020/ner_app/ 
 
-
+(ner_model updating~)
 
