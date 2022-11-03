@@ -1,5 +1,5 @@
 from utils import *
-from BiLSTM_CRF import *
+from bilstm_crf import *
 from config import *
 import torch
 
@@ -16,7 +16,7 @@ if __name__ == '__main__':
     dataset_test = Dataset('test')
     loader_test = data.DataLoader(dataset_test, batch_size=100, collate_fn=collate_fn)
 
-    model = BILSTM_CRF().to(DEVICE)
+    model = bilstm_crf().to(DEVICE)
     optimizer = torch.optim.Adam(model.parameters(), lr=LR)
 
     total = len(dataset_train)
