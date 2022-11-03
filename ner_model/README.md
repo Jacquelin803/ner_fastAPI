@@ -1,6 +1,6 @@
 ### Pytorch BiLSTM_CRF医疗命名实体识别
 
-本项目是阿里天池大赛的一个经典赛题，《瑞金医院MMC人工智能辅助构建知识图谱大赛》，赛题要求选手在糖尿病相关的学术论文和临床指南的基础上，做实体的标注，也就是NLP领域常说的，命名实体识别（Named Entity Recognition, NER）任务。
+本项目是阿里天池大赛的一个经典赛题，《瑞金医院MMC人工智能辅助构建知识图谱大赛》，赛题要求选手在糖尿病相关的学术论文和临床指南的基础上，做实体的标注-命名实体识别（Named Entity Recognition, NER）任务。
 
 天池赛题地址：https://tianchi.aliyun.com/competition/entrance/231687/information
 
